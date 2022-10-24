@@ -1,0 +1,22 @@
+.banner-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)), url(asset_path('show-cover.jpg'));
+  background-size: cover;
+  background-position: center;
+
+  h1 {
+    color: white;
+  }
+}
+
+.show-navigate{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 200px;
+}
+

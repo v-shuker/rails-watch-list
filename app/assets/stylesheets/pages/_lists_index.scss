@@ -1,0 +1,25 @@
+.banner-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url(asset_path('cinema.jpg'));
+  background-size: cover;
+  background-position: center;
+
+  h1 {
+    color: white;
+  }
+}
+
+.logo-navbar {
+  display: flex;
+  align-items: center;
+  a {
+    margin-right: 4px;
+  }
+  p{
+    margin: 0;
+  }
+}

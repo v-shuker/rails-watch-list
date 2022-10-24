@@ -1,0 +1,24 @@
+<div class="banner-show">
+    <h1><%= @list.name %></h1>
+  </div>
+
+
+
+<div class="list-index-content">
+  <% @list.movies.each do |movie| %>
+    <div class="list-card-index">
+      <%= image_tag 'list-image', class: 'image-list-cover',  alt: "image cover for list" %>
+      <div class="list-card-content">
+        <p><%= movie.title %></p>
+      </div>
+    </div>
+
+    <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
+  <% end %>
+</div>
+
+
+<div class="show-navigate">
+  <%= link_to "Home Page", lists_path, class: 'btn btn-secondary' %>
+  <%= link_to "Add a movie", new_list_bookmark_path(@list), class: 'btn btn-success' %>
+</div>

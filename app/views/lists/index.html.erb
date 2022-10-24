@@ -1,0 +1,21 @@
+<div class="wrapper">
+
+  <div class="banner-index">
+    <h1>Welcome to your lists!</h1>
+  </div>
+
+  <div class="list-index-content">
+    <% @lists.each do |list| %>
+      <%= link_to list_path(list) do  %>
+        <div class="list-card-index">
+          <%= image_tag 'list-image', class: 'image-list-cover',  alt: "image cover for list" %>
+
+          <div class="list-card-content">
+            <p><%= list.name %></p>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+</div>
